@@ -14,7 +14,7 @@ def send_message(event, vk_api, user_id):
     )
 
 
-def starting_vk_bot(token, project_id, language):
+def start_vk_bot(token, project_id, language):
     vk_session = vk.VkApi(token=token)
     vk_api = vk_session.get_api()
     longpoll = VkLongPoll(vk_session)

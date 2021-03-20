@@ -14,8 +14,8 @@ def main():
     language = "ru-RU"
     dialog_flow_project_id = env('DIALOG_FLOW_ID_PROJECT')
 
-    telegram_bot.starting_telegram_bot(telegram_token)
-    vk_bot.starting_vk_bot(vk_token, dialog_flow_project_id, language)
+    telegram_bot.start_telegram_bot(telegram_token, dialog_flow_project_id, language)
+    vk_bot.start_vk_bot(vk_token, dialog_flow_project_id, language)
 
 
 if __name__ == '__main__':
