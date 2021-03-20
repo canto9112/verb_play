@@ -24,7 +24,7 @@ def starting_vk_bot():
     longpoll = VkLongPoll(vk_session)
 
     language = "ru-RU"
-    project_id = env('DIALOG_FLOU_ID_PROJECT')
+    project_id = env('DIALOG_FLOW_ID_PROJECT')
 
     for event in longpoll.listen():
         if event.type == VkEventType.MESSAGE_NEW and event.to_me:

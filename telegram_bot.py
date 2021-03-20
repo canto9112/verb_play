@@ -11,7 +11,7 @@ def handle_text(bot, update):
     logger = config.get_logger()
 
     language = "ru-RU"
-    project_id = env('DIALOG_FLOU_ID_PROJECT')
+    project_id = env('DIALOG_FLOW_ID_PROJECT')
 
     user_id = update.message.chat_id
     username = update.message.chat['username']
