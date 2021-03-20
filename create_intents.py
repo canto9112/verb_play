@@ -1,7 +1,30 @@
+import json
+
 from environs import Env
 from google.cloud import dialogflow
 
-import config
+
+def get_training_file(file):
+    with open(file, "r") as my_file:
+        file_contents = json.load(my_file)
+    return file_contents
+
+
+def get_intents(contents):
+    intents = []
+
+    for name_intent, result in contents.items():
+        messages = result['answer']
+        questions = result['questions']
+
+        training_phrases_parts = []
+        for question in questions:
+            training_phrases_parts.append({'parts': question})
+        intents.append({'display_name': name_intent,
+                        "messages": {"text": [messages]},
+                        'training_phrases_parts': training_phrases_parts
+                        })
+    return intents
 
 
 def create_intent(project_id, display_name, training_phrases_parts, message_texts):
@@ -27,8 +50,8 @@ def create_intent(project_id, display_name, training_phrases_parts, message_text
 
 
 def create_intents(file, project_id):
-    training_file = config.get_training_file(file)
-    intents = config.get_intents(training_file)
+    training_file = get_training_file(file)
+    intents = get_intents(training_file)
 
     for intent in intents:
         display_name = intent['display_name']
@@ -60,9 +83,9 @@ def main():
     env.read_env()
 
     dialog_flow_project_id = env('DIALOG_FLOW_ID_PROJECT')
-    get_training_file = 'train_phrase_1.json'
+    training_file = 'train_phrase_1.json'
 
-    create_intents(get_training_file, dialog_flow_project_id)
+    create_intents(training_file, dialog_flow_project_id)
 
 
 if __name__ == "__main__":
