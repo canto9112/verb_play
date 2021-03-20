@@ -55,7 +55,7 @@ def detect_intent_texts(project_id, session_id, texts, language_code):
     return fulfillment_text, fallback_intent
 
 
-if __name__ == "__main__":
+def main():
     env = Env()
     env.read_env()
 
@@ -63,3 +63,7 @@ if __name__ == "__main__":
     get_training_file = 'train_phrase_1.json'
 
     create_intents(get_training_file, dialog_flow_project_id)
+
+
+if __name__ == "__main__":
+    main()
