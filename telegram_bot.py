@@ -2,6 +2,7 @@ from environs import Env
 from telegram.ext import Filters, MessageHandler, Updater
 
 import config
+import create_intents
 
 env = Env()
 env.read_env()
@@ -17,14 +18,12 @@ def handle_text(bot, update):
     username = update.message.chat['username']
     user_message = update.message.text
 
-    fulfillment_text, fallback_intent = config.detect_intent_texts(project_id, user_id, user_message, language)
+    fulfillment_text, fallback_intent = create_intents.detect_intent_texts(project_id, user_id, user_message, language)
     bot.sendMessage(chat_id=user_id, text=fulfillment_text)
     logger.info(f'User id/name: {user_id}/{username}, message: {user_message}, bot response: {fulfillment_text}')
 
 
-def starting_telegram_bot():
-    token = env('TELEGRAM_BOT_TOKEN')
-
+def starting_telegram_bot(token):
     updater = Updater(token=token)
     # MessageHandler -- более универсальный обработчик, который берёт на вход фильтр
     text_handler = MessageHandler(Filters.text, handle_text)
