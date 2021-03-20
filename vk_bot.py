@@ -3,7 +3,7 @@ import random
 
 import vk_api as vk
 from vk_api.longpoll import VkLongPoll, VkEventType
-import detect_intent_google
+import config
 
 
 def send_message(event, vk_api, user_id):
@@ -14,7 +14,7 @@ def send_message(event, vk_api, user_id):
     )
 
 
-if __name__ == "__main__":
+def starting_vk_bot():
     env = Env()
     env.read_env()
     token = env('VK_TOKEN')
@@ -32,7 +32,6 @@ if __name__ == "__main__":
             user_id = event.user_id
             user_message = event.text
 
-            fulfillment_text, fallback_intent = detect_intent_google.detect_intent_texts(project_id, user_id, user_message, language)
+            fulfillment_text, fallback_intent = config.detect_intent_texts(project_id, user_id, user_message, language)
             if not fallback_intent:
                 send_message(fulfillment_text, vk_api, user_id)
-
