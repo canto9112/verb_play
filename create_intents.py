@@ -1,3 +1,4 @@
+import argparse
 import json
 
 from environs import Env
@@ -78,12 +79,22 @@ def detect_intent_texts(project_id, session_id, texts, language_code):
     return fulfillment_text, fallback_intent
 
 
+def get_args():
+    parser = argparse.ArgumentParser(
+        description='Скрипт принимает файл с заготовленными вопросами и ответами'
+    )
+    parser.add_argument('file', help='Название json файла для обучения бота')
+    args = parser.parse_args()
+    return args.file
+
+
 def main():
     env = Env()
     env.read_env()
 
     dialog_flow_project_id = env('DIALOG_FLOW_ID_PROJECT')
-    training_file = 'train_phrase_1.json'
+
+    training_file = get_args()
 
     create_intents(training_file, dialog_flow_project_id)
 
