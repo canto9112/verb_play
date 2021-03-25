@@ -3,11 +3,12 @@
 Бот отвечает на типичные вопросы тех-поддержки в Вконтакте и Телеграм, а вот что-то посложнее – перенаправляет на операторов. 
 
 * Пример бота [Вконтакте](https://vk.com/im?media=&sel=-203493103)
+
 ![Пример Вконтакте](https://s221vla.storage.yandex.net/rdisk/014789cef8acad41238cb96c626750baeb9ad57f9d66bdd6a1750004b66ebc0b/605a413b/gYM6vOLH3ltThvsLhTsgmmcYu3HisyGzqeqQeVArq4ZVWoypia2_-2Vud0H93FrhyFSH2s5tgrpMOPaHV8iICQ==?uid=344477538&filename=Untitled.gif&disposition=inline&hash=&limit=0&content_type=image%2Fgif&owner_uid=344477538&fsize=572550&hid=6f11372597de1f7e797c8f2fc9825614&media_type=image&tknv=v2&etag=339b521887c95d893adec3052046fb0c&rtoken=oZkb9Fa5zPgR&force_default=yes&ycrid=na-31149a1d9c1c323142134c07f8f7d8da-downloader6e&ts=5be392dd684c0&s=ecf5ffcfffaa2c3d69a37b36c68160de8286910870e0f6eecf1b0c51fae01da0&pb=U2FsdGVkX1_xNYDWFf8560-q18i5dPjOk-XJPuSQF5X6U7w4XK1yY19J4JxZaZpHGE2JTOO2MRkwFjww5U_Mk-Ol-Wlt0tzLhWR72wgehV8)
 
 * Пример бота в [Телеграм](https://vk.cc/c02ULR)
 
-![Пример в Телеграм](https://s231vla.storage.yandex.net/rdisk/d64aac1307a6967bb6b54310718458e4485d12abe5748501233fa04b3dda1911/605a4301/gYM6vOLH3ltThvsLhTsgmgHXM-cE7hbVRTTeqPobE7otH5iimzlWzxEHDZtMuMsVRA3FDx91c4cjGpjS7dJhEA==?uid=344477538&filename=TG.gif&disposition=inline&hash=&limit=0&content_type=image%2Fgif&owner_uid=344477538&fsize=416665&hid=0a7269cb9c0f98d8267eefb5349d11bc&media_type=image&tknv=v2&etag=ff8bb3f6d6ca56409f5a0d2e7873c334&rtoken=zfAGsdQOlFxr&force_default=yes&ycrid=na-f8bbbd51ac370600279e74a54c8e0df5-downloader20h&ts=5be3948e60240&s=48e2931a2e684e843bef41471fe9505a5ae3aea1d696670632d7f030284944b8&pb=U2FsdGVkX1_Gy_oGuO1E00puGoFLoKoWRyemnbanUrTllYJEGI1m1LyGA1O-vb63X2EoXVod9Bka5bbkG9ZnFSmItPL82CbSBDltTWnSCxQ)
+![Пример в Телеграм](https://s431man.storage.yandex.net/rdisk/548756d9cf96bce38c7386303af214670da3a0ff8a295df37b57383e0c16501b/605cd4fa/gYM6vOLH3ltThvsLhTsgmgHXM-cE7hbVRTTeqPobE7otH5iimzlWzxEHDZtMuMsVRA3FDx91c4cjGpjS7dJhEA==?uid=344477538&filename=TG.gif&disposition=inline&hash=&limit=0&content_type=image%2Fgif&owner_uid=344477538&fsize=416665&hid=0a7269cb9c0f98d8267eefb5349d11bc&media_type=image&tknv=v2&etag=ff8bb3f6d6ca56409f5a0d2e7873c334&rtoken=DaxfadjLllqT&force_default=yes&ycrid=na-ec1fc86fce1ac6bb3769f8176be0910c-downloader21f&ts=5be6080c3b280&s=30d80acd00a13d21f2bb273bb92c791469b932b7f45aeb014c64a51df710a9a1&pb=U2FsdGVkX1_tgo9LoJk5N5wQmfJm7cOfgOc25v92ku3FhbEDtwOJMHjcnV0j8iyKJ1SV3fALJd3pWuDttf7fXgKtJWZwZzlZXG-rhed3U5I)
 
 Скрипт ```main.py``` запускает бота в Вк и Телеграм.
 
