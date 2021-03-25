@@ -3,6 +3,7 @@
 Бот отвечает на типичные вопросы тех-поддержки в Вконтакте и Телеграм, а вот что-то посложнее – перенаправляет на операторов. 
 
 * Пример бота [Вконтакте](https://vk.com/im?media=&sel=-203493103)
+
 ![Пример Вконтакте](https://s221vla.storage.yandex.net/rdisk/014789cef8acad41238cb96c626750baeb9ad57f9d66bdd6a1750004b66ebc0b/605a413b/gYM6vOLH3ltThvsLhTsgmmcYu3HisyGzqeqQeVArq4ZVWoypia2_-2Vud0H93FrhyFSH2s5tgrpMOPaHV8iICQ==?uid=344477538&filename=Untitled.gif&disposition=inline&hash=&limit=0&content_type=image%2Fgif&owner_uid=344477538&fsize=572550&hid=6f11372597de1f7e797c8f2fc9825614&media_type=image&tknv=v2&etag=339b521887c95d893adec3052046fb0c&rtoken=oZkb9Fa5zPgR&force_default=yes&ycrid=na-31149a1d9c1c323142134c07f8f7d8da-downloader6e&ts=5be392dd684c0&s=ecf5ffcfffaa2c3d69a37b36c68160de8286910870e0f6eecf1b0c51fae01da0&pb=U2FsdGVkX1_xNYDWFf8560-q18i5dPjOk-XJPuSQF5X6U7w4XK1yY19J4JxZaZpHGE2JTOO2MRkwFjww5U_Mk-Ol-Wlt0tzLhWR72wgehV8)
 
 * Пример бота в [Телеграм](https://vk.cc/c02ULR)
