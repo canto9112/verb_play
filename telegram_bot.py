@@ -15,7 +15,7 @@ def handle_text(update, context: CallbackContext):
     username = update.message.chat['username']
     user_message = update.message.text
 
-    fulfillment_text, fallback_intent = create_intents.detect_intent_texts(project_id, user_id, user_message, language)
+    fulfillment_text, fallback_intent = create_intents.detect_intent_texts(project_id, f'tg-{user_id}', user_message, language)
 
     context.bot.sendMessage(chat_id=user_id, text=fulfillment_text)
     if fallback_intent:

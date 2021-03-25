@@ -28,7 +28,7 @@ def start_vk_bot(token, project_id, language):
             user_id = event.user_id
             user_message = event.text
 
-            fulfillment_text, fallback_intent = create_intents.detect_intent_texts(project_id, user_id, user_message, language)
+            fulfillment_text, fallback_intent = create_intents.detect_intent_texts(project_id, f'vk-{user_id}', user_message, language)
             if not fallback_intent:
                 send_message(fulfillment_text, vk_api, user_id)
             else:
