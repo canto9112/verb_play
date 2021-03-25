@@ -47,8 +47,6 @@ def create_intent(project_id, display_name, training_phrases_parts, message_text
               "intent": intent}
     intents_client.create_intent(request=params)
 
-    print(f"Intent created: {display_name}")
-
 
 def create_intents(file, project_id):
     training_file = get_training_file(file)
