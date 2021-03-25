@@ -1,7 +1,7 @@
 import logging
 
 
-class MyLogsHandler(logging.Handler):
+class TelegramLogsHandler(logging.Handler):
     def __init__(self, bot, chat_id, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.bot = bot

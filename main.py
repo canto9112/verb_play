@@ -5,7 +5,7 @@ from environs import Env
 
 import telegram_bot
 import vk_bot
-from logger_bot import MyLogsHandler
+from logger_bot import TelegramLogsHandler
 
 telegram_logger = logging.getLogger('tg-bot')
 
@@ -23,7 +23,7 @@ def main():
     bot = telegram.Bot(token=telegram_token)
 
     telegram_logger.setLevel(logging.DEBUG)
-    telegram_logger.addHandler(MyLogsHandler(bot, telegram_chat_id))
+    telegram_logger.addHandler(TelegramLogsHandler(bot, telegram_chat_id))
 
     telegram_logger.debug('Бот ВК и Telegram - запущен')
     try:
